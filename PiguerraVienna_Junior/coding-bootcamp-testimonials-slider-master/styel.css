@@ -1,0 +1,118 @@
+*{
+    padding:0%;
+    margin:0;
+    box-sizing:border-box; 
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200&family=Inter:wght@300;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100;1,400;1,500&display=swap');
+  :root{
+      --darkBlue: hsl(240, 38%, 20%)
+     /* <!--grayishBlue: hsl(240, 18%, 77%)*/
+  }
+  body{
+      font-family: 'Inter', sans-serif;
+      align-items: center;
+      display:flex;
+      justify-content:center;
+      height:100vh;
+      background-color:rgb(234, 228, 220);
+  }
+  .container{
+      display:flex;
+      flex-direction:row-reverse;
+      align-items:center;
+      justify-content:center;
+      max-width: 750px; 
+      margin: 0px auto;
+      padding: 20px;
+      background-color:white;
+      border-radius:10px;
+  
+  }
+  
+  .feedback{
+      position:relative;
+  
+  }
+  .feedback img{
+      height:60px;
+      position:absolute;
+      top:50px;
+      left:50px;
+     
+  
+  }
+  .feedback p{
+      font-size:18px;
+      color:var(--darkBlue);
+      font-weight:300;
+  }
+  .name{
+      color:var(--darkBlue);
+      padding-top:15px;
+  }
+  .role{
+      color:var(--grayishBlue);
+      padding:10px;
+  }
+  .slider-container{
+      position:relative;
+  
+  }
+  .slider-container img{
+      max-width: 80%;
+      
+  }  
+  .navigation{
+      display:inline-block;
+      background-color:rgb(255, 255, 255);
+      box-shadow:0px 2px 8px rgba(0,0,0,0.2);
+      border-radius:10px;
+      position:absolute;
+      bottom:25px;
+      left:40px;
+      padding-left:10px;
+      padding-right:10px;
+      padding-top:5px;
+      padding-bottom:5px;
+  }
+  .navigation img{
+      cursor:pointer;
+      padding:8px, 10px, 5px, 10px;
+      
+  }
+  @media (max-width:800px){
+      .container{
+          flex-direction:column;
+          width:350px;
+          align-items:center;
+          
+      }
+      .feedback{
+          text-align:center;
+          margin-top:50px;
+      }
+      .feedback img{
+          left:40px;
+          
+      }
+      .role{
+          display:block;
+  
+      }
+      .navigation{
+        
+       display:inline-block;
+       background-color:rgb(255, 255, 255);
+       box-shadow:0px 2px 8px rgba(0,0,0,0.2);
+       border-radius:10px;
+       position:absolute;
+       bottom:10px;
+       left:85px;
+       padding-left:10px;
+       padding-right:10px;
+       padding-top:5px;
+       padding-bottom:5px;
+      }
+  }
+  
